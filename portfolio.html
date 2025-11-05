@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adv. Vraj Raval — Criminal Law Advocate</title>
+  <meta name="description" content="Adv. Vraj Raval — Criminal Law Specialist. LLB (Distinction), GLS University Ahmedabad. Criminal defense, bail hearings, appeals, investigations." />
+  <meta name="keywords" content="Vraj Raval, Criminal Lawyer, Criminal Defense, Ahmedabad, GLS University" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- JSON-LD Person schema for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Adv. Vraj Raval",
+    "jobTitle": "Criminal Law Advocate",
+    "alumniOf": "GLS University, Ahmedabad",
+    "worksFor": "Self-Employed",
+    "address": "Ahmedabad, India",
+    "sameAs": ["https://www.linkedin.com/in/REPLACE_WITH_PROFILE"]
+  }
+  </script>
+
+  <style>
+    /* =========================
+       THEME COLORS (black, white, muted gold accent)
+       ========================= */
+    :root{
+      --bg-primary: #ffffff;
+      --bg-secondary: #f5f5f5;
+      --text-primary: #000000;
+      --text-secondary: #333333;
+      --accent: #bfa76f; /* muted gold */
+      --border: #e0e0e0;
+      --footer-bg: #0b0b0b;
+      --footer-text: #f5f5f5;
+
+      --max-width: 1100px;
+      --radius: 10px;
+      --gap: 1.2rem;
+    }
+
+    /* =========================
+       Base / Reset
+       ========================= */
+    *{box-sizing: border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:var(--text-primary);
+      background:var(--bg-primary);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      font-size:16px;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--text-primary); text-decoration:none}
+    .container{max-width:var(--max-width); margin:0 auto; padding:1rem;}
+
+    /* =========================
+       Header / Nav
+       ========================= */
+    header{
+      position:sticky;
+      top:0;
+      z-index:60;
+      backdrop-filter: blur(6px);
+      background: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.7));
+      border-bottom:1px solid var(--border);
+    }
+    .nav-row{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:var(--gap);
+      padding:0.6rem 1rem;
+    }
+    .brand{
+      display:flex;
+      gap:0.6rem;
+      align-items:center;
+    }
+    .brand .logo{
+      width:44px;height:44px;border-radius:6px;background:#000;color:#fff;display:grid;place-items:center;font-weight:700;font-family:"Playfair Display",serif;
+    }
+    .brand h1{font-size:1.05rem;margin:0;line-height:1;font-family:"Playfair Display",serif;letter-spacing:0.6px}
+    nav.desktop-nav{display:flex;gap:1rem;align-items:center}
+    nav.desktop-nav a{padding:0.45rem 0.6rem;border-radius:6px;font-weight:500}
+    nav.desktop-nav a:hover{background:var(--bg-secondary)}
+    .cta-btn{
+      background:var(--accent);
+      color:#000;
+      padding:0.5rem 0.9rem;border-radius:8px;font-weight:600;
+      box-shadow:0 6px 18px rgba(191,167,111,0.12);
+    }
+    .cta-btn:hover{transform:translateY(-3px);transition:transform .18s ease}
+    /* hamburger (mobile) */
+    .hamburger{display:none;background:none;border:0;font-size:1.25rem;padding:0.45rem;border-radius:8px}
+    
+    /* =========================
+       Hero
+       ========================= */
+    .hero{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:1rem;
+      align-items:center;
+      padding:2.2rem 1rem;
+    }
+    .hero-inner{display:flex;flex-direction:column;gap:1.2rem;align-items:flex-start}
+    .hero .portrait{
+      width:100%;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,0.06);
+      max-height:420px;
+      position:relative;
+    }
+    .hero .portrait img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%) contrast(95%)}
+    .hero h2{font-family:"Playfair Display",serif;font-size:2rem;margin:0;letter-spacing:1px}
+    .hero p.lead{margin:0;color:var(--text-secondary);font-size:1rem}
+    .hero .buttons{display:flex;gap:0.7rem;flex-wrap:wrap}
+    .btn-outline{padding:0.5rem 0.9rem;border-radius:8px;border:1px solid var(--text-primary);background:transparent;font-weight:600}
+    .btn-outline:hover{background:rgba(0,0,0,0.03);transform:translateY(-3px);transition: all .18s ease}
+
+    /* =========================
+       About + Practice + Cases Layout
+       ========================= */
+    section{padding:2rem 1rem}
+    .two-col{display:grid;grid-template-columns:1fr;gap:1rem;align-items:center}
+    .card{background:var(--bg-primary);border-radius:var(--radius);padding:1rem;border:1px solid var(--border)}
+    .muted{color:var(--text-secondary);font-size:0.95rem}
+
+    /* practice grid */
+    .grid-practice{display:grid;grid-template-columns:repeat(1,1fr);gap:1rem}
+    .practice-card{padding:1rem;border-radius:10px;border:1px solid var(--border);display:flex;gap:0.8rem;align-items:flex-start}
+    .practice-card h4{margin:0;font-family:"Playfair Display",serif}
+    .practice-icon{width:56px;height:56px;border-radius:8px;background:#000;color:#fff;display:grid;place-items:center;font-weight:700;flex:0 0 56px}
+    
+    /* case study cards */
+    .cases{display:grid;grid-template-columns:1fr;gap:1rem}
+    .case-item{padding:1rem;border-radius:10px;border:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+    .case-item .meta{color:var(--text-secondary);font-size:0.95rem}
+    .case-item .view-btn{padding:0.4rem 0.7rem;border-radius:8px;border:1px solid var(--text-primary);font-weight:600}
+
+    /* testimonials */
+    .testimonials{background:#111;color:#fff;padding:1.6rem;border-radius:12px}
+    .testimonial-slide{min-height:100px;display:grid;place-items:center;text-align:center;padding:0.8rem}
+    .t-author{margin-top:0.6rem;font-weight:600}
+
+    /* contact */
+    .contact-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+    .form-field{display:flex;flex-direction:column;gap:0.4rem}
+    input,textarea,select{padding:0.65rem;border:1px solid var(--border);border-radius:8px;font-size:0.95rem}
+    textarea{min-height:120px;resize:vertical}
+    .submit-btn{background:var(--text-primary);color:#fff;padding:0.6rem 0.9rem;border-radius:8px;border:0;font-weight:600}
+    .submit-btn:hover{opacity:0.95;transform:translateY(-2px);transition:.15s ease}
+
+    /* footer */
+    footer{background:var(--footer-bg);color:var(--footer-text);padding:1.4rem 1rem}
+    .footer-row{display:flex;flex-direction:column;gap:0.6rem;align-items:center}
+    .social a{margin:0 0.4rem;color:var(--footer-text);opacity:0.9}
+    .small{font-size:0.88rem;color:rgba(255,255,255,0.85)}
+
+    /* =========================
+       Animations
+       ========================= */
+    .hidden-anim{opacity:0; transform:translateY(12px)}
+    .in-view{opacity:1; transform:translateY(0); transition: all .7s cubic-bezier(.2,.9,.25,1)}
+    /* slide left/right for practice cards */
+    .slide-in-left{opacity:0; transform:translateX(-30px)}
+    .slide-in-right{opacity:0; transform:translateX(30px)}
+    .slide-in-left.in-view, .slide-in-right.in-view{opacity:1; transform:translateX(0); transition:all .65s cubic-bezier(.2,.9,.25,1)}
+    /* hero fade+slide-up */
+    .fade-up{opacity:0; transform:translateY(10px)}
+    .fade-up.in-view{opacity:1; transform:translateY(0); transition:all .7s ease}
+    /* modal overlay & fall-in */
+    .modal-overlay{position:fixed;inset:0;background:rgba(10,10,10,0.65);display:none;place-items:center;z-index:120;padding:1rem}
+    .modal-overlay.active{display:grid}
+    .modal{
+      width:95%;max-width:760px;background:var(--bg-primary);border-radius:12px;padding:1.2rem;box-shadow:0 30px 80px rgba(0,0,0,0.3);
+      transform:translateY(-20px) scale(.98);opacity:0;transition:all .28s ease;
+    }
+    .modal.open{transform:translateY(0) scale(1);opacity:1}
+    .modal .close{background:none;border:0;font-size:1.25rem;padding:0.3rem}
+
+    /* mobile nav drawer */
+    .nav-drawer{position:fixed;top:0;right:-100%;width:280px;height:100%;background:var(--bg-primary);box-shadow:-12px 0 30px rgba(0,0,0,0.12);transition:all .28s ease;z-index:130;padding:1rem}
+    .nav-drawer.open{right:0}
+    .drawer-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.35);z-index:120;display:none}
+    .drawer-overlay.show{display:block}
+
+    /* toast */
+    .toast{
+      position:fixed;top:-80px;left:50%;transform:translateX(-50%);background:var(--text-primary);color:#fff;padding:0.75rem 1rem;border-radius:10px;z-index:140;box-shadow:0 8px 30px rgba(0,0,0,0.15);
+      transition:all .35s cubic-bezier(.2,.9,.25,1);
+    }
+    .toast.show{top:18px;opacity:1}
+    /* small responsive tweaks */
+    @media(min-width:700px){
+      .hero{grid-template-columns:55% 40%}
+      .two-col{grid-template-columns:48% 48%}
+      .grid-practice{grid-template-columns:repeat(2,1fr)}
+      .cases{grid-template-columns:repeat(2,1fr)}
+      .contact-grid{grid-template-columns:60% 38%}
+      .hamburger{display:none}
+      nav.desktop-nav{display:flex}
+      .nav-toggle{display:none}
+    }
+    @media(max-width:699px){
+      .hamburger{display:inline-block}
+      nav.desktop-nav{display:none}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Toast notification (contact form success) -->
+  <div id="toast" class="toast" role="status" aria-live="polite" style="display:block;opacity:0">
+    Thank you! We'll contact you soon.
+  </div>
+
+  <!-- Header / Navigation -->
+  <header role="banner" aria-label="Main header">
+    <div class="container nav-row" >
+      <div class="brand" aria-hidden="false">
+        <div class="logo" aria-hidden="true">VR</div>
+        <div>
+          <h1>Adv. Vraj Raval</h1>
+          <div class="muted" style="font-size:0.85rem">Criminal Law Specialist</div>
+        </div>
+      </div>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#practice">Practice Areas</a>
+        <a href="#cases">Cases</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a class="cta-btn" href="#contact">Book Consultation</a>
+      </nav>
+
+      <!-- mobile hamburger -->
+      <button class="hamburger nav-toggle" aria-controls="mobile-drawer" aria-expanded="false" aria-label="Open menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <div id="drawerOverlay" class="drawer-overlay" tabindex="-1"></div>
+  <aside id="mobileDrawer" class="nav-drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.6rem">
+      <strong id="drawerTitle">Adv. Vraj Raval</strong>
+      <button aria-label="Close menu" id="drawerClose" style="border:0;background:none;font-size:1.2rem">✕</button>
+    </div>
+    <nav style="display:flex;flex-direction:column;gap:0.6rem" aria-label="Mobile navigation">
+      <a href="#home" class="drawer-link">Home</a>
+      <a href="#about" class="drawer-link">About</a>
+      <a href="#practice" class="drawer-link">Practice Areas</a>
+      <a href="#cases" class="drawer-link">Cases</a>
+      <a href="#testimonials" class="drawer-link">Testimonials</a>
+      <a href="#contact" class="drawer-link">Contact</a>
+      <a class="cta-btn" href="#contact" style="display:inline-block;margin-top:0.6rem">Book Consultation</a>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main id="home" tabindex="-1">
+    <!-- HERO -->
+    <section class="hero container" aria-label="Introduction">
+      <div class="hero-inner">
+        <div class="fade-up" id="heroText">
+          <div class="muted">ADVOCATE</div>
+          <h2>Adv. Vraj Raval</h2>
+          <p class="lead">Criminal Law Specialist — LLB (Distinction), GLS University, Ahmedabad</p>
+        </div>
+
+        <div class="buttons fade-up" style="--delay:0.2s">
+          <a class="cta-btn" href="#contact">Book Consultation</a>
+          <a class="btn-outline" href="#cases">View Case Studies</a>
+        </div>
+
+        <p class="muted fade-up" style="max-width:60%">Practical, compassionate criminal defense with attention to detail. I represent clients across bail hearings, criminal trials, appeals, and investigations.</p>
+      </div>
+
+      <div class="portrait fade-up" aria-hidden="false" aria-label="Portrait of Adv. Vraj Raval">
+        <!-- Replace portrait.jpg with your actual portrait image (optimized) -->
+        <img src="VR.jpg" alt="Portrait of Adv. Vraj Raval — Criminal Law Specialist (Replace with actual portrait)" onerror="this.style.filter='grayscale(100%)';">
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container" aria-labelledby="aboutTitle">
+      <div class="two-col">
+        <div class="card slide-in-left">
+          <h3 id="aboutTitle" style="font-family:'Playfair Display',serif">About Adv. Vraj Raval</h3>
+          <p class="muted">LLB (Distinction), GLS University, Ahmedabad. Practicing criminal law with a focus on thorough case preparation, client-first communication, and strong courtroom advocacy.</p>
+          <p>Vraj has experience handling bail applications, criminal trials, anticipatory bail petitions, appeals, and white-collar matters. He emphasizes client confidentiality, evidence-driven defense strategies, and ethical advocacy.</p>
+          <ul style="margin:0;padding-left:1.1rem;color:var(--text-secondary)">
+            <li>LLB — GLS University, Ahmedabad (Graduated with Distinction)</li>
+            <li>Practice: Criminal Defense, Bail Hearings, Appeals, Investigations</li>
+            <li>Available for consultations in Ahmedabad & remote video consultations</li>
+          </ul>
+        </div>
+
+        <div class="card slide-in-right" aria-hidden="false">
+          <!-- Replace office.jpg with your office or courtroom image -->
+          <img src="profile.jpg" alt="Office or courtroom image (replace with your own)" style="border-radius:8px;max-height:320px;object-fit:cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- PRACTICE AREAS -->
+    <section id="practice" class="container" aria-labelledby="practiceTitle">
+      <h3 id="practiceTitle" style="font-family:'Playfair Display',serif">Practice Areas</h3>
+      <p class="muted">Specialized services under criminal law.</p>
+
+      <div class="grid-practice">
+        <article class="practice-card slide-in-left" tabindex="0" aria-labelledby="p1">
+          <div class="practice-icon">01</div>
+          <div>
+            <h4 id="p1">Criminal Defense</h4>
+            <p class="muted">Complete defense strategy at police & trial levels, evidence analysis, witness preparation and courtroom representation.</p>
+          </div>
+        </article>
+
+        <article class="practice-card slide-in-right" tabindex="0" aria-labelledby="p2">
+          <div class="practice-icon">02</div>
+          <div>
+            <h4 id="p2">Bail & Anticipatory Bail</h4>
+            <p class="muted">Urgent bail petitions, drafting and appearances for regular and anticipatory bail applications.</p>
+          </div>
+        </article>
+
+        <article class="practice-card slide-in-left" tabindex="0" aria-labelledby="p3">
+          <div class="practice-icon">03</div>
+          <div>
+            <h4 id="p3">Appeals & Revisions</h4>
+            <p class="muted">Appeals in Sessions, High Court level, and drafting of revisions and statutory remedies.</p>
+          </div>
+        </article>
+
+        <article class="practice-card slide-in-right" tabindex="0" aria-labelledby="p4">
+          <div class="practice-icon">04</div>
+          <div>
+            <h4 id="p4">White-Collar Crime</h4>
+            <p class="muted">Representation in fraud, corporate disputes, and financial investigations.</p>
+          </div>
+        </article>
+
+        <article class="practice-card slide-in-left" tabindex="0" aria-labelledby="p5">
+          <div class="practice-icon">05</div>
+          <div>
+            <h4 id="p5">Juvenile Matters</h4>
+            <p class="muted">Child-centered representation, juvenile justice board appearances and guidance.</p>
+          </div>
+        </article>
+
+        <article class="practice-card slide-in-right" tabindex="0" aria-labelledby="p6">
+          <div class="practice-icon">06</div>
+          <div>
+            <h4 id="p6">Investigations & Pre-trial Strategy</h4>
+            <p class="muted">Liaison with investigators, evidence collection strategy and pre-trial preparations.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section id="cases" class="container" aria-labelledby="casesTitle">
+      <h3 id="casesTitle" style="font-family:'Playfair Display',serif">Selected Case Studies</h3>
+      <p class="muted">Anonymized highlights of representative matters (details are confidential).</p>
+
+      <div class="cases">
+        <div class="case-item slide-in-left">
+          <div>
+            <strong>Case A — Complex Criminal Trial</strong>
+            <div class="meta">Outcome: Acquittal after full trial</div>
+          </div>
+          <div>
+            <button class="view-btn" data-case="caseA" aria-controls="modal" aria-haspopup="dialog">View More</button>
+          </div>
+        </div>
+
+        <div class="case-item slide-in-right">
+          <div>
+            <strong>Case B — Successful Bail Application</strong>
+            <div class="meta">Outcome: Anticipatory bail granted</div>
+          </div>
+          <div>
+            <button class="view-btn" data-case="caseB" aria-controls="modal" aria-haspopup="dialog">View More</button>
+          </div>
+        </div>
+
+        <div class="case-item slide-in-left">
+          <div>
+            <strong>Case C — White Collar Investigation</strong>
+            <div class="meta">Outcome: Negotiated resolution / reduced charges</div>
+          </div>
+          <div>
+            <button class="view-btn" data-case="caseC" aria-controls="modal" aria-haspopup="dialog">View More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for case details -->
+    <div id="modalOverlay" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal" role="document" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+        <div style="display:flex;align-items:center;justify-content:space-between">
+          <h4 id="modalTitle" style="margin:0">Case Title</h4>
+          <button class="close" id="modalClose" aria-label="Close case details">✕</button>
+        </div>
+        <p id="modalDesc" class="muted">Case details go here. Replace with anonymized facts, legal strategy summary, and outcome. Ensure client confidentiality.</p>
+        <div style="margin-top:0.6rem;color:var(--text-secondary)">
+          <strong>Outcome:</strong> <span id="modalOutcome">Outcome summary</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="container" aria-labelledby="testiTitle">
+      <h3 id="testiTitle" style="font-family:'Playfair Display',serif;color:var(--text-primary)">Testimonials</h3>
+      <p class="muted">What clients say.</p>
+
+      <div class="testimonials" role="region" aria-roledescription="carousel" aria-label="Testimonials carousel">
+        <div id="testiViewport">
+          <div class="testimonial-slide" data-index="0">
+            <blockquote style="margin:0;font-style:italic">"Adv. Vraj Raval handled my case with deep care and exceptional skill. Professional and compassionate."</blockquote>
+            <div class="t-author">— Client A</div>
+          </div>
+          <div class="testimonial-slide" data-index="1" style="display:none">
+            <blockquote style="margin:0;font-style:italic">"Clear guidance during a stressful time; excellent courtroom presence."</blockquote>
+            <div class="t-author">— Client B</div>
+          </div>
+          <div class="testimonial-slide" data-index="2" style="display:none">
+            <blockquote style="margin:0;font-style:italic">"Helped us navigate complex investigation. Strong legal strategy and results."</blockquote>
+            <div class="t-author">— Client C</div>
+          </div>
+        </div>
+
+        <div style="display:flex;justify-content:center;gap:0.6rem;margin-top:0.9rem">
+          <button id="prevTesti" aria-label="Previous testimonial" style="border:0;background:none;color:#fff;font-weight:700">‹</button>
+          <button id="nextTesti" aria-label="Next testimonial" style="border:0;background:none;color:#fff;font-weight:700">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container" aria-labelledby="contactTitle">
+      <h3 id="contactTitle" style="font-family:'Playfair Display',serif">Contact & Appointment</h3>
+      <p class="muted">For consultations and case inquiries. Replace the email and phone below with your contact information.</p>
+
+      <div class="contact-grid">
+        <form id="contactForm" class="card" onsubmit="return false;" aria-label="Contact form">
+          <!-- Note: If you have no backend, provide mailto fallback below -->
+          <div class="form-field">
+            <label for="name">Full Name <span aria-hidden="true" style="color:#b00">*</span></label>
+            <input id="name" name="name" required placeholder="Your full name">
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email <span aria-hidden="true" style="color:#b00">*</span></label>
+            <input id="email" type="email" name="email" required placeholder="you@example.com">
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210">
+          </div>
+
+          <div class="form-field">
+            <label for="date">Preferred Date / Time</label>
+            <input id="date" name="date" type="text" placeholder="e.g., 20 Nov 2025 — Afternoon">
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Briefly describe your matter"></textarea>
+          </div>
+
+          <div style="display:flex;gap:0.6rem;align-items:center;margin-top:0.6rem">
+            <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+            <div class="muted" style="font-size:0.9rem">Or email: <a href="mailto:replace@youremail.com" id="mailto">replace@youremail.com</a></div>
+          </div>
+        </form>
+
+        <aside class="card" aria-label="Contact details">
+          <h4 style="margin-top:0">Contact Details</h4>
+          <div class="muted">Office: Ahmedabad, Gujarat</div>
+          <div style="margin-top:0.6rem">
+            <strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a><br>
+            <strong>Email:</strong> <a href="mailto:replace@youremail.com">replace@youremail.com</a>
+          </div>
+
+          <hr style="border:none;border-top:1px solid var(--border);margin:0.8rem 0">
+
+          <div>
+            <strong>Bar Council ID:</strong>
+            <div class="muted">REPLACE_WITH_BAR_COUNCIL_ID</div>
+          </div>
+
+          <div style="margin-top:0.8rem" class="muted">
+            For urgent legal assistance, please call the phone number above. Consultations are available in-person and via video.
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container footer-row">
+      <div style="display:flex;align-items:center;gap:0.6rem">
+        <div class="logo" style="width:46px;height:46px;border-radius:6px;background:#fff;color:#000;display:grid;place-items:center;font-weight:700">VR</div>
+        <div style="text-align:left">
+          <div style="font-weight:700">Adv. Vraj Raval</div>
+          <div class="small muted">Criminal Law Advocate — Ahmedabad</div>
+        </div>
+      </div>
+
+      <div style="margin-top:0.8rem">
+        <div class="social">
+          <!-- Replace with your real social URLs -->
+          <a href="https://www.linkedin.com/in/REPLACE_WITH_PROFILE" aria-label="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:replace@youremail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+
+      <div class="small" style="margin-top:0.6rem">© <span id="year"></span> Adv. Vraj Raval • All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- JS: Interactivity, animations, modal, nav, contact form -->
+  <script>
+    /* ========= Helper Utilities ========= */
+    const qs = (s, ctx=document) => ctx.querySelector(s);
+    const qsa = (s, ctx=document) => Array.from(ctx.querySelectorAll(s));
+
+    /* ====== Toast (contact success) ====== */
+    const toast = qs('#toast');
+    function showToast(msg = "Thank you! We'll contact you soon.", duration = 4000){
+      toast.textContent = msg;
+      toast.style.display = 'block';
+      setTimeout(()=> toast.classList.add('show'), 50);
+      setTimeout(()=> {
+        toast.classList.remove('show');
+        setTimeout(()=> toast.style.display='none', 350);
+      }, duration);
+    }
+
+    /* ====== Mobile drawer (slide-out) ====== */
+    const drawer = qs('#mobileDrawer');
+    const drawerOverlay = qs('#drawerOverlay');
+    const navToggle = qs('.nav-toggle') || qs('.hamburger');
+    const drawerClose = qs('#drawerClose');
+
+    function openDrawer(){
+      drawer.classList.add('open');
+      drawerOverlay.classList.add('show');
+      navToggle.setAttribute('aria-expanded','true');
+      // trap focus on the drawer (basic)
+      drawer.querySelector('a, button')?.focus();
+    }
+    function closeDrawer(){
+      drawer.classList.remove('open');
+      drawerOverlay.classList.remove('show');
+      navToggle.setAttribute('aria-expanded','false');
+      navToggle.focus();
+    }
+
+    navToggle?.addEventListener('click', ()=>{
+      if(drawer.classList.contains('open')) closeDrawer();
+      else openDrawer();
+    });
+    drawerClose?.addEventListener('click', closeDrawer);
+    drawerOverlay?.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', (e)=>{
+      if(e.key === 'Escape'){
+        if(drawer.classList.contains('open')) closeDrawer();
+        if(qs('#modalOverlay')?.classList.contains('active')) closeModal();
+      }
+    });
+
+    // Close drawer on link click (mobile)
+    qsa('.drawer-link').forEach(a => a.addEventListener('click', closeDrawer));
+
+    /* ====== Scroll animations with IntersectionObserver ====== */
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, {threshold: 0.12});
+
+    // observe elements that should animate
+    qsa('.fade-up, .slide-in-left, .slide-in-right, .hidden-anim').forEach(el => observer.observe(el));
+
+    /* ====== Case modal logic ====== */
+    const modalOverlay = qs('#modalOverlay');
+    const modal = qs('.modal');
+    const modalCloseBtn = qs('#modalClose');
+    const caseButtons = qsa('.view-btn');
+
+    const caseData = {
+      caseA: {
+        title: "Case A — Complex Criminal Trial",
+        desc: "An anonymized summary: client faced multiple charges; defense strategy focused on forensic evidence and witness cross-examination. Case proceeded to trial and resulted in acquittal.",
+        outcome: "Acquittal after full trial."
+      },
+      caseB: {
+        title: "Case B — Successful Bail Application",
+        desc: "Anticipatory bail application filed in high-pressure circumstances. Pleadings focused on lack of prima facie case and personal sureties; bail was granted.",
+        outcome: "Anticipatory bail granted."
+      },
+      caseC: {
+        title: "Case C — White Collar Investigation",
+        desc: "Represented client during an investigation. Strategy prioritized documentary evidence review and negotiation with investigating authority, leading to reduced charges.",
+        outcome: "Negotiated resolution; reduced charges."
+      }
+    };
+
+    function openModal(key){
+      const data = caseData[key] || {title:'Case', desc:'Details pending', outcome:'Pending'};
+      qs('#modalTitle').textContent = data.title;
+      qs('#modalDesc').textContent = data.desc;
+      qs('#modalOutcome').textContent = data.outcome;
+      modalOverlay.classList.add('active');
+      modal.classList.add('open');
+      modalOverlay.setAttribute('aria-hidden','false');
+      // focus for accessibility
+      modal.querySelector('.close').focus();
+      // Remember last focused element to return focus later
+      lastFocused = document.activeElement;
+    }
+    function closeModal(){
+      modal.classList.remove('open');
+      modalOverlay.classList.remove('active');
+      modalOverlay.setAttribute('aria-hidden','true');
+      // return focus
+      lastFocused?.focus();
+    }
+    let lastFocused = null;
+    caseButtons.forEach(btn=>{
+      btn.addEventListener('click', (e)=>{
+        const key = e.currentTarget.dataset.case;
+        openModal(key);
+      });
+    });
+    modalCloseBtn.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', (e)=>{
+      if(e.target === modalOverlay) closeModal();
+    });
+
+    /* ====== Testimonials carousel (simple) ====== */
+    const slides = qsa('.testimonial-slide');
+    let testiIndex = 0;
+    const showTestimonial = (index)=>{
+      slides.forEach((s,i)=> s.style.display = (i===index? 'grid' : 'none'));
+    };
+    showTestimonial(testiIndex);
+    const nextTesti = qs('#nextTesti'); const prevTesti = qs('#prevTesti');
+    nextTesti.addEventListener('click', ()=>{
+      testiIndex = (testiIndex + 1) % slides.length; showTestimonial(testiIndex);
+    });
+    prevTesti.addEventListener('click', ()=>{
+      testiIndex = (testiIndex - 1 + slides.length) % slides.length; showTestimonial(testiIndex);
+    });
+    // Auto rotate
+    let testiTimer = setInterval(()=>{ testiIndex = (testiIndex + 1) % slides.length; showTestimonial(testiIndex); }, 5000);
+    // pause rotation on hover
+    qs('.testimonials').addEventListener('mouseenter', ()=> clearInterval(testiTimer));
+    qs('.testimonials').addEventListener('mouseleave', ()=> { testiTimer = setInterval(()=>{ testiIndex = (testiIndex + 1) % slides.length; showTestimonial(testiIndex); }, 5000); });
+
+    /* ====== Contact form validation & submit (client side only) ====== */
+    const form = qs('#contactForm');
+    const submitBtn = qs('#submitBtn');
+    submitBtn.addEventListener('click', (e)=>{
+      // Basic validation
+      const name = qs('#name').value.trim();
+      const email = qs('#email').value.trim();
+      if(!name){ alert('Please enter your name.'); qs('#name').focus(); return; }
+      if(!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ alert('Please enter a valid email.'); qs('#email').focus(); return; }
+
+      // Simulate successful submit; actual sending requires backend or email service
+      showToast('Message sent. We will contact you shortly.');
+      // clear form
+      form.reset();
+      // Optionally, suggest mailto fallback for users without backend:
+      // You can construct a mailto link here if you need to open email client
+    });
+
+    /* ====== Small enhancements ====== */
+    // set current year in footer
+    qs('#year').textContent = new Date().getFullYear();
+
+    // Add 'in-view' to hero on load for initial animation
+    window.addEventListener('load', ()=> {
+      setTimeout(()=> qs('#heroText').classList.add('in-view'), 160);
+      // reveal all fade-up elements
+      qsa('.fade-up').forEach(el => {
+        if(!el.classList.contains('in-view')) {
+          observer.observe(el);
+        }
+      });
+    });
+
+    // Smooth scroll for internal anchors (improves UX on mobile)
+    qsa('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const target = this.getAttribute('href');
+        if(target && target.startsWith('#')){
+          const el = qs(target);
+          if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'center'}); }
+          // close drawer if open
+          if(drawer.classList.contains('open')) closeDrawer();
+        }
+      });
+    });
+
+    // keyboard accessibility: trap focus inside modal (simple)
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Tab' && modalOverlay.classList.contains('active')){
+        const focusable = Array.from(modal.querySelectorAll('a, button, input, textarea, select')).filter(el=>!el.disabled);
+        if(focusable.length === 0) return;
+        const first = focusable[0], last = focusable[focusable.length-1];
+        if(e.shiftKey && document.activeElement === first){ last.focus(); e.preventDefault(); }
+        else if(!e.shiftKey && document.activeElement === last){ first.focus(); e.preventDefault(); }
+      }
+    });
+
+    // Provide placeholder console message to remind replace images
+    console.info("REMINDER: Replace 'portrait.jpg' and 'office.jpg' with optimized images. Update email, phone and Bar Council ID in HTML where indicated.");
+  </script>
+
+</body>
+</html>
